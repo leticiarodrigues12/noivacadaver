@@ -1,175 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noiva-Cadáver</title>
-    <style>
-        body {
-            background-color: #121a2f;
-            color: #e0f7fa;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-
-        nav {
-            background-color: #112a46;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: #b2ebf2;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        header {
-            background-color: #0f3460;
-            padding: 30px 20px;
-            text-align: center;
-            border-bottom: 2px solid #64ccc5;
-            margin-top: 50px; /* espaço para nav */
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-            color: #a5daec;
-        }
-
-        main {
-            padding: 20px;
-            padding-top: 40px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        h2 {
-            text-align: center;
-            color: #b2ebf2;
-            margin-top: 40px;
-        }
-
-        p, li {
-            line-height: 1.6;
-            font-size: 1rem;
-        }
-
-        ul {
-            list-style: disc;
-            padding-left: 40px;
-            margin-bottom: 30px;
-        }
-
-        img {
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-            max-width: 100%;
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        a {
-            color: #72e6ff;
-        }
-
-        blockquote {
-            font-style: italic;
-            color: #c2ecff;
-            margin: 20px auto;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #0f3460;
-            color: #e0f7fa;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio | Letícia Rodrigues</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 <body>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#curiosidades">Curiosidades</a>
-        <a href="#personagens">Personagens</a>
-        <a href="#trailer">Trailer</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#falas">Falas</a>
-        <a href="#linha">Linha do Tempo</a>
-        <a href="#diretor">Sobre o Diretor</a>
+  <!-- Animação estilo Netflix -->
+  <div id="intro-animation" class="intro-animation">
+    <span class="logo-animation">Letflix</span>
+  </div>
+
+  <!-- Navegação tipo Netflix -->
+  <header class="header">
+    <h1 class="logo-texto">
+      Letícia Rodrigues <i class='bx bx-pencil'></i>
+    </h1>
+    <nav class="nav-bar">
+      <a href="#home">Home</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#contato">Contatos</a>
     </nav>
+  </header>
 
-    <header>
-        <h1>Noiva-Cadáver</h1>
-        <p>Um conto sombrio de Tim Burton</p>
-    </header>
+  <main id="home" class="conteudo">
+    <h2 class="pergunta">oque você quer ver?</h2>
+    <section class="cards">
+      <a href="#projetos" class="card"><p><em>projetos</em></p></a>
+      <a href="#sobre" class="card"><p>sobre mim</p></a>
+      <a href="#contato" class="card"><p>contatos</p></a>
+    </section>
 
-    <main>
-        <h2 id="home">Bem-vindo!</h2>
-        <p class="center">Explore o universo gótico e encantador da Noiva-Cadáver.</p>
-        <img src="https://www.clickgratis.com.br/_upload/movies/2005/10/21/a-noiva-cadaver.jpg" alt="Poster da Noiva-Cadáver">
+    <div class="card-add">
+      <div class="plus">+</div>
+      <p>adicionar perfil</p>
+    </div>
+  </main>
 
-        <h2 id="curiosidades">Curiosidades</h2>
-        <ul>
-            <li>Emily foi inspirada em lendas do folclore europeu.</li>
-            <li>O filme usou técnica de stop-motion e levou mais de 50 semanas para ser finalizado.</li>
-            <li>Danny Elfman compôs a trilha sonora.</li>
-        </ul>
+  <!-- Seções para rolagem -->
+  <section id="projetos" style="height: 100vh;"></section>
+  <section id="sobre" style="height: 100vh;"></section>
+  <section id="contato" style="height: 100vh;"></section>
 
-        <h2 id="personagens">Personagens</h2>
-        <ul>
-            <li><b>Victor</b> — Noivo nervoso e gentil.</li>
-            <li><b>Emily</b> — A noiva-cadáver.</li>
-            <li><b>Victoria</b> — A noiva viva de Victor.</li>
-        </ul>
-
-        <h2 id="trailer">Trailer</h2>
-        <p class="center">
-            <a href="https://youtu.be/_oUlx4U5_VY" target="_blank">Assista ao trailer no YouTube</a>
-        </p>
-
-        <h2 id="galeria">Galeria</h2>
-        <img src="http://1.bp.blogspot.com/-gzt9Dc2ujJA/UyV3IB_VvRI/AAAAAAAAAUU/Nq9lnK6Eau4/s1600/novia+cadaverrrr.jpg" alt="Emily">
-        <img src="https://i.pinimg.com/originals/ef/d6/3e/efd63e91242f562242a2c00d0a57863d.jpg" alt="Victor">
-
-        <h2 id="falas">Falas Marcantes</h2>
-        <blockquote>"Você me manteve esperando... Mas eu nunca parei de te amar." — Emily</blockquote>
-        <blockquote>"Eu te amo, mas você não é minha noiva..." — Victor</blockquote>
-
-        <h2 id="linha">Linha do Tempo</h2>
-        <ul>
-            <li>Victor ensaia os votos no bosque.</li>
-            <li>Acidentalmente casa com Emily, a noiva-cadáver.</li>
-            <li>Descobre o passado trágico de Emily.</li>
-            <li>Escolhe entre o mundo dos vivos e o dos mortos.</li>
-        </ul>
-
-        <h2 id="diretor">Sobre Tim Burton</h2>
-        <ul>
-            <li>Burton é um cineasta conhecido por seu estilo sombrio e fantasioso.</li>
-            <li>Além de Noiva-Cadáver, dirigiu <i>O Estranho Mundo de Jack</i> e <i>A Fantástica Fábrica de Chocolate</i>.</li>
-        </ul>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 - Feito por uma maravilhosa fã de Tim Burton</p>
-    </footer>
+  <script>
+    window.addEventListener("load", () => {
+      const intro = document.getElementById('intro-animation');
+      setTimeout(() => {
+        intro.style.opacity = '0';
+        intro.style.pointerEvents = 'none';
+      }, 2500);
+    });
+  </script>
 
 </body>
 </html>
